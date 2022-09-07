@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>shuoye</title>
+   <style type="text/css">
+	body{
+	 line-height:400px;
+	 text-align:center;
+	 font-size:30px;
+	 color:rgb(21,23,25);
+	 background-color:rgb(8,1,242);
+	 font-family:华文琥珀;
+	}
+  </style>
+
+ </head>
+ <body>
+  <h1>
+  我的JavaScript的学习之路
+  </h1>
+ </body>
+</html>
