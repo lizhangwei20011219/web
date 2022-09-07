@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <title> 第一课--循环</title>
+ <style type="text/css">
+    body{
+	 font-size:25px;
+	 margin: 0 ;
+	}
+	p{
+	 background-color:navy;
+	 color:white;
+	 font-size:1.3em;
+	}
+	h1{
+	 background-color:orange;
+	 color:white;
+	 font-size:2em;
+     text-align:center;
+	}
+	p,h1{
+	 margin:10px;
+	 padding:10px 20px;
+	}
+  </style>
+ </head>
+ <body>
+  <h1>每次弹窗实现一段JavaScript代码，共实现三次！</h1>
+  <!--为何上面h1元素的输出，在JavaScript运行时没有出现？-->
+  <p>
+   第一次循环
+   原价：10元，打九折
+   输出我要花多少钱
+  </p>
+  <p>
+  第二次循环
+  输出100以内整数之和
+  </p>
+  <p>
+  第三次循环
+  输出我的部分信息
+  </P>
+  <script>
+	//第1段代码，实现计算和输出
+	var price = 10; 
+	var discount = 0.1;
+	var total = price - (price * discount );
+	var zhe = 10-(discount*10);
+	var output = "原价："+price+"元,"+"\n"+"打了"+zhe+"折,"+"\n"+"总共支出："+ total + " 元。" 
+	alert(output);
+	//第2段代码，实现循环计算和输出
+	var count = 100;
+	total = 0 ;
+	while (count > 0) {
+	 total += count
+	 count = count - 1;
+	}
+	output = "100以内的整数之和是：" + total + " !" ;
+	alert(output);
+	//第3段代码，实现判断计算和输出
+	var person = {name: "liweihua", isMale:true , weight: 65};
+	//上面和下面语句，涉及对象变量和点语法，若感觉不好理解，可以暂时忽略语法细节。
+	output = "姓名：" + person.name + "\n"  + "体重:" + person.weight +" KG ." ;
+	if (person.isMale) {
+	 output +="\n" + "性别：男"  ;
+	} else {
+	 output +="\n" + "性别：女"  ;
+	}
+	alert(output);
+ </script>
+ </body>
+</html>
